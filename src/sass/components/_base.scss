@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: minmax(min-content, max-content) 1fr;
+  box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+  min-height: 100vh;
+}

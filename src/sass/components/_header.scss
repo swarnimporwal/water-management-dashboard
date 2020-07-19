@@ -1,0 +1,37 @@
+.header {
+  background-image: linear-gradient(to right, #000428, #004e92);
+  // background-color: #101D2C;
+  padding: 2rem;
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+  color: #f9f7f6;
+  transition: all .2s;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+}
+
+.nav {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+
+  &__link:link,
+  &__link:visited {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 1.5rem;
+      display: inline-block;
+      transition: all .2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+      background-color: rgba(#fff, .05);
+      transform: translateY(-3px);
+  }
+}
